@@ -1,0 +1,14 @@
+{
+  "name": "algoritimo_de_profundidade",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jrbigmon/depth_algorithm_for_objects.git",
+  "author": "jrbigmon <juniorterriaga0@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
