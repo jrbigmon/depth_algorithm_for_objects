@@ -70,8 +70,8 @@ const listOfProperties = getListOfProperties(object);
 console.log(listOfProperties);
 // result:
 // [
-//   'name',
-//   'age',
+//   ['name'],
+//   ['age'],
 //   [ 'address', 'street' ],
 //   [ 'address', 'number' ],
 //   [ 'address', 'state' ],
