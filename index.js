@@ -8,7 +8,7 @@ const algorithmObjectMap = () => {
       Object.entries(object)?.forEach(([key, value]) => {
         if (typeof value !== "object") {
           if (!father?.length) {
-            listOfProperties.push(key);
+            listOfProperties.push([key]);
           } else {
             listOfProperties.push([...father, key]);
           }
@@ -68,4 +68,4 @@ const algorithmObjectMap = () => {
   };
 };
 
-module.exports = algorithmObjectMap;
+module.exports = algorithmObjectMap();
