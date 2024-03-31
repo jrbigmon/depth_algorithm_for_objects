@@ -7,11 +7,7 @@ const algorithmObjectMap = () => {
 
       Object.entries(object)?.forEach(([key, value]) => {
         if (typeof value !== "object") {
-          if (!father?.length) {
-            listOfProperties.push([key]);
-          } else {
-            listOfProperties.push([...father, key]);
-          }
+          listOfProperties.push([...(father?.length ? father : []), key]);
         } else {
           listOfTemporaryObjects.push([
             [...(father?.length ? father : []), key],
